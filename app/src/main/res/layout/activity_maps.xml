@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.MapsActivity">
+
+    <!-- Source Layout -->
+    <FrameLayout
+        android:id="@+id/sourceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <!-- Source Autocomplete Fragment -->
+        <fragment
+            android:id="@+id/source_autocomplete_fragment"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="source"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            tools:layout="@layout/abc_activity_chooser_view" />
+    </FrameLayout>
+
+    <!-- Destination Layout -->
+    <FrameLayout
+        android:id="@+id/destinationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sourceLayout">
+
+        <!-- Destination Autocomplete Fragment -->
+        <fragment
+            android:id="@+id/destination_autocomplete_fragment"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="destination"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="10dp"
+            tools:layout="@layout/abc_activity_chooser_view" />
+    </FrameLayout>
+
+    <!-- Map Fragment -->
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/destinationLayout"
+        android:layout_above="@+id/bottom_navigation" />
+
+    <!-- Map Options ImageButton -->
+    <ImageButton
+        android:id="@+id/mapOptionsMenu"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Map Type"
+        android:src="@drawable/moreoptions" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/showCurrentLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="5dp"
+        android:text="Current Location" />
+
+    <Button
+        android:id="@+id/startNavigationButton"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/showCurrentLocationButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/showCurrentLocationButton"
+        android:text="Start" />
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>

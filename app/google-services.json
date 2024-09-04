@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "244530917810",
+    "project_id": "mcfkotlinusermanagement",
+    "storage_bucket": "mcfkotlinusermanagement.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244530917810:android:994157b56fe192b95834ab",
+        "android_client_info": {
+          "package_name": "com.motivity.mcf_kotlin_user_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244530917810-esj6h045p6crqsev7l6nn23s4rpi1psp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.motivity.mcf_kotlin_user_management",
+            "certificate_hash": "c35248c80d966a437a56ce44b12b97db3d89272c"
+          }
+        },
+        {
+          "client_id": "244530917810-haa6rdrtvujc6vcj9otrjaq3khdqm6q9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcaleSuJuw-BEdFIf5MeVdZbIknctVhFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244530917810-haa6rdrtvujc6vcj9otrjaq3khdqm6q9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

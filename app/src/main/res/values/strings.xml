@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">mcfkotlinusermanagement_v1.0</string>
+    <string name="title_activity_user_login">UserLoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="facebook_app_id">1806869033065802</string>
+    <string name="YOUR_FACEBOOK_CLIENT_TOKEN">bc89e8a04cc05436db2a1023c14ab204</string>
+    <string name="default_web_client_id">244530917810-esj6h045p6crqsev7l6nn23s4rpi1psp.apps.googleusercontent.com</string>
+    <string name="google_map_api_key">AIzaSyDBOOKUbB5AjZGROTna4SGgfnF4_BgDX5M</string>
+
+</resources>

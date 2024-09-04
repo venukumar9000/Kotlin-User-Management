@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="CustomTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme attributes here -->
+        <item name="colorPrimary">@color/your_custom_primary_color</item>
+        <item name="colorSecondary">@color/your_custom_secondary_color</item>
+        <!-- Add more custom attributes as needed -->
+
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="android:statusBarColor">@color/blue</item>
+    </style>
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/orange</item>
+    </style>
+</resources>
